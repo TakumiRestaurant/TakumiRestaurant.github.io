@@ -1,0 +1,75 @@
+header {
+    position: relative;
+    height: 90vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.scroll-snap {
+    scroll-snap-align: start;
+}
+
+.card-image {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.card-description {
+    border: 3px solid #F4F4F4;
+    border-radius: 0;
+    width: 24rem;
+    margin: 1rem;
+}
+
+.card-text {
+    font-family: "Bitter Regular", serif;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.link-content {
+    background-color: #EBE9E6;
+    max-width: 100%;
+}
+
+.link-image {
+    max-width: 100%;
+}
+
+.link-context-header {
+    font-family: "Pathway Gothic One", sans-serif;
+    font-size: 70px;
+    letter-spacing: 4px;
+}
+
+.link-context-description {
+    font-family: "Bitter", serif;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.btn-outline-dark {
+    font-family: "Montserrat SemiBold", sans-serif;
+    font-size: 14px;
+    border-radius: 0;
+    width: 220px;
+    padding: 10px;
+}

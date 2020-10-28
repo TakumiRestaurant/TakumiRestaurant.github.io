@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <script src="js/float-panel.js"></script>
+    <script src="js/menu.js"></script>
+    <title>Takumi</title>
+  </head>
+  <body onload="DeclareVariables()">
+    <!-- header -->
+    <div class="px-3 px-md-5 px-xl-6 px-xxl-6 py-0 mb-0 nav-style-2">
+      <nav class="navbar navbar-expand-sm navbar-dark px-0 py-2">
+        <a href="index.html"><img src="images/logosmall.png" alt="Takumi Logo"></a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse pull-xs-right justify-content-end" id="navbarMenu">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a href="index.html" class="nav-link ml-md-4">HOME</a></li>
+            <li class="nav-item"><a href="menu.html" class="nav-link ml-md-4 nav-active">MENU</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link ml-md-4">ABOUT</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link ml-md-4">CONTACT US</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!-- menu navbar -->
+    <div class="px-md-5 px-xl-6 px-xxl-6 py-0 mb-0 menu-navbar">
+      <nav class="navbar menu-navbar-modify navbar-expand-sm navbar-dark px-0">
+        <div class="navbar-collapse justify-content-center">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a href="#" onclick="Starters()" id="starters" class="nav-link menu-category px-3 px-md-4 active menu-active">STARTERS</a></li>
+            <li class="nav-item"><a href="#" onclick="Teishoku()" id="teishoku" class="nav-link menu-category px-3 px-md-4">TEISHOKU</a></li>
+            <li class="nav-item"><a href="#" onclick="Jyu()" id="jyu" class="nav-link menu-category px-3 px-md-4">JYU</a></li>
+            <li class="nav-item"><a href="#" onclick="Desserts()" id="desserts" class="nav-link menu-category px-3 px-md-4">DESSERTS/DRINKS</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!-- menu lists -->
+    <!-- starters menu -->
+    <div id="starters_menu" class="container-fluid px-0 px-sm-3 px-md-5 px-xl-6 px-xxl-6 py-5">
+      <div class="container-fluid p-0 menu-container">
+        <div class="container-fluid menu-header d-flex justify-content-center align-items-center" style="background-image: url(images/headerstarters.png)">
+          <h1>STARTERS</h1>
+        </div>
+        <!-- actual menu -->
+
+        <!-- top row -->
+        <div class="row px-5 px-sm-5-5 pt-5-5">
+          <!-- left row -->
+          <div class="col-lg-6 py-3 py-lg-0 pl-0 pr-0 pr-lg-5">
+            <table>
+              <!-- menu item -->
+              <tr>
+                <td class="item-name-and-price">ONTAMA SALAD</td>
+                <td class="item-name-and-price float-right">290</td>
+              </tr>
+              <tr>
+                <td class="item-name-japanese">温玉サラダ</td>
+              </tr>
+              <tr>
+                <td class="item-description pr-5">
+                  garden-fresh greens topped with
+                  Parmesan cheese and slow-cooked
+                  egg with your choice of dressing
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!-- right row -->
+          <div class="col-lg-6 py-3 py-lg-0 pr-0 pl-0 pl-lg-5">
+            <table>
+              <!-- menu item -->
+              <tr>
+                <td class="item-name-and-price">KANI SALAD</td>
+                <td class="item-name-and-price float-right">295</td>
+              </tr>
+              <tr>
+                <td class="item-name-japanese">カニサラダ</td>
+              </tr>
+              <tr>
+                <td class="item-description pr-5">
+                  refreshing with sweet notes from
+                  ripe mangoes that is a contrast to
+                  the lightly savory flavors of kani
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <!-- bottom row -->
+        <div class="row px-5 px-sm-5-5 pt-0 pt-lg-4 pb-5-5">
+          <!-- left row -->
+          <div class="col-lg-6 py-3 py-lg-0 pl-0 pr-0 pr-lg-5">
+            <table>
+              <!-- menu item -->
+              <tr>
+                <td class="item-name-and-price">EBI TEMPURA</td>
+                <td class="item-name-and-price float-right">325</td>
+              </tr>
+              <tr>
+                <td class="item-name-japanese">海老の天ぷら</td>
+              </tr>
+              <tr>
+                <td class="item-description pr-5">
+                  gsucculent shrimps coated in a thin
+                  batter and fried until lightly crisp,
+                  and served with a sweet-salty sauce
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!-- right row -->
+          <div class="col-lg-6 py-3 py-lg-0 pr-0 pl-0 pl-lg-5">
+            <table>
+              <!-- menu item -->
+              <tr>
+                <td class="item-name-and-price">AGEDASHI TOFU</td>
+                <td class="item-name-and-price float-right">150</td>
+              </tr>
+              <tr>
+                <td class="item-name-japanese">揚げ出し豆腐</td>
+              </tr>
+              <tr>
+                <td class="item-description pr-5">
+                  deep fried tofu served in flavorful
+                  tsuyu sauce with grated radish,
+                  green onion, and bonito flakes
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <h2 class="d-flex justify-content-center px-5 px-sm-5-5">SIGNATURE ROLLS</h2>
+
+        <!-- top row -->
+        <div class="row px-5 px-sm-5-5 pt-5-5">
+          <!-- left row -->
+          <div class="col-lg-6 py-3 py-lg-0 pl-0 pr-0 pr-lg-5">
+            <table>
+              <!-- menu item -->
+              <tr>
+                <td class="item-name-and-price">CALIFORNIA ROLL</td>
+                <td class="item-name-and-price float-right">250</td>
+              </tr>
+              <tr>
+                <td class="item-name-japanese">カリフォルニアロール</td>
+              </tr>
+              <tr>
+                <td class="item-description pr-5">
+                  maki sushi made by rolling
+                  ingredients such as crab and
+                  avocado in nori and seasoned rice.
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!-- right row -->
+          <div class="col-lg-6 py-3 py-lg-0 pr-0 pl-0 pl-lg-5">
+            <table>
+              <!-- menu item -->
+              <tr>
+                <td class="item-name-and-price">SALMON TEMARI SUSHI</td>
+                <td class="item-name-and-price float-right">295</td>
+              </tr>
+              <tr>
+                <td class="item-name-japanese">サーモン手まり寿司</td>
+              </tr>
+              <tr>
+                <td class="item-description pr-5">
+                  salmon temari rolled into
+                  goodness
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <!-- bottom row -->
+        <div class="row px-5 px-sm-5-5 pb-5-5 pt-0 pt-lg-4">
+          <!-- left row -->
+          <div class="col-lg-6 py-3 py-lg-0 pl-0 pr-0 pr-lg-5">
+            <table>
+              <!-- menu item -->
+              <tr>
+                <td class="item-name-and-price">YAKINIKU ROLL</td>
+                <td class="item-name-and-price float-right">295</td>
+              </tr>
+              <tr>
+                <td class="item-name-japanese">焼肉ロール</td>
+              </tr>
+              <tr>
+                <td class="item-description pr-5">
+                  japanese rice rolled with asparagus
+                  and carrots, topped with Yakiniku
+                  beef
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!-- right row -->
+          <div class="col-lg-6 py-3 py-lg-0 pr-0 pl-0 pl-lg-5">
+            <table>
+              <!-- menu item -->
+              <tr>
+                <td class="item-name-and-price">SPICY SALMON ROLL</td>
+                <td class="item-name-and-price float-right">350</td>
+              </tr>
+              <tr>
+                <td class="item-name-japanese">スパイシーサーモンロール</td>
+              </tr>
+              <tr>
+                <td class="item-description pr-5">
+                  salmon in spicy mayo dressing
+                  rolled in tempura flakes
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <h2 class="d-flex justify-content-center px-5 px-sm-5-5">NOODLES</h2>
+
+        <!-- top row -->
+        <div class="row px-5 px-sm-5-5 pt-5-5">
+          <!-- left row -->
+          <div class="col-lg-6 py-3 py-lg-0 pl-0 pr-0 pr-lg-5">
+            <table>
+              <!-- menu item -->
+              <tr>
+                <td class="item-name-and-price">TONKOTSU SHOYU RAMEN</td>
+                <td class="item-name-and-price float-right">395</td>
+              </tr>
+              <tr>
+                <td class="item-name-japanese">とんこつ醤油ラーメン</td>
+              </tr>
+              <tr>
+                <td class="item-description pr-5">
+                  pork belly, soft-boiled egg
+                  and ramen noodles in pork broth
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!-- right row -->
+          <div class="col-lg-6 py-3 py-lg-0 pr-0 pl-0 pl-lg-5">
+            <table>
+              <!-- menu item -->
+              <tr>
+                <td class="item-name-and-price">NIKU UDON</td>
+                <td class="item-name-and-price float-right">350</td>
+              </tr>
+              <tr>
+                <td class="item-name-japanese">肉うどん</td>
+              </tr>
+              <tr>
+                <td class="item-description pr-5">
+                  udon noodle topped with
+                  beef and a slow-cooked egg
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <!-- bottom row -->
+        <div class="row px-5 px-sm-5-5 pb-5-5 pt-0 pt-lg-4">
+          <!-- left row -->
+          <div class="col-lg-6 py-3 py-lg-0 pl-0 pr-0 pr-lg-5">
+            <table>
+              <!-- menu item -->
+              <tr>
+                <td class="item-name-and-price">CURRY BEEF UDON</td>
+                <td class="item-name-and-price float-right">395</td>
+              </tr>
+              <tr>
+                <td class="item-name-japanese">カレーうどん</td>
+              </tr>
+              <tr>
+                <td class="item-description pr-5">
+                  udon noodle curry topped with
+                  tender slices of beef
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- teishoku menu -->
+    <div id="teishoku_menu" class="container-fluid px-0 px-sm-3 px-md-5 px-xl-6 px-xxl-6 py-5" style="display:none">
+      <div class="container-fluid p-0 menu-container">
+        <div class="container-fluid menu-header d-flex justify-content-center align-items-center" style="background-image: url(images/headerteishoku.png)">
+          <h1>TEISHOKU</h1>
+        </div>
+        <!-- top row -->
+        <div class="row px-5 px-sm-5-5 pt-5-5">
+          <!-- left row -->
+          <div class="col-lg-6 py-3 py-lg-0 pl-0 pr-0 pr-lg-5">
+            <table>
+              <!-- menu item -->
+              <tr>
+                <td class="item-name-and-price ">CHICKEN NAMBAN</td>
+                <td class="item-name-and-price">395</td>
+              </tr>
+              <tr>
+                <td class="item-name-japanese">チキン南蛮</td>
+              </tr>
+              <tr>
+                <td class="item-description pr-5">
+                  fried chicken steak drizzled
+                  with house special sauce,
+                  topped with tartar dressing
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!-- right row -->
+          <div class="col-lg-6 py-3 py-lg-0 pr-0 pl-0 pl-lg-5">
+            <table>
+              <!-- menu item -->
+              <tr>
+                <td class="item-name-and-price">CHICKEN KATSU
+                </td>
+                <td class="item-name-and-price float-right">350</td>
+              </tr>
+              <tr>
+                <td class="item-name-japanese">チキンカツ</td>
+              </tr>
+              <tr>
+                <td class="item-description pr-5">
+                  deep-fried chicken cutlets
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <!-- middle row -->
+        <div class="row px-5 px-sm-5-5 py-0 pt-lg-4 pb-lg-3">
+          <!-- left row -->
+          <div class="col-lg-6 py-3 py-lg-0 pl-0 pr-0 pr-lg-5">
+            <table>
+              <!-- menu item -->
+              <tr>
+                <td class="item-name-and-price">KARAAGE</td>
+                <td class="item-name-and-price float-right">395</td>
+              </tr>
+              <tr>
+                <td class="item-name-japanese">唐揚げ空揚げ</td>
+              </tr>
+              <tr>
+                <td class="item-description pr-5">
+                  japanese deep-fried chicken
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!-- right row -->
+          <div class="col-lg-6 py-3 py-lg-0 pr-0 pl-0 pl-lg-5">
+            <table>
+              <!-- menu item -->
+              <tr>
+                <td class="item-name-and-price">TERIYAKI CHICKEN</td>
+                <td class="item-name-and-price float-right">395</td>
+              </tr>
+              <tr>
+                <td class="item-name-japanese">照り焼きチキン</td>
+              </tr>
+              <tr>
+                <td class="item-description pr-5">
+                  chicken in teriyaki sauce
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <!-- middle row -->
+        <div class="row px-5 px-sm-5-5 py-0 py-lg-3">
+          <!-- left row -->
+          <div class="col-lg-6 py-3 py-lg-0 pl-0 pr-0 pr-lg-5">
+            <table>
+              <!-- menu item -->
+              <tr>
+                <td class="item-name-and-price">SHOGA YAKI</td>
+                <td class="item-name-and-price float-right">395</td>
+              </tr>
+              <tr>
+                <td class="item-name-japanese">生姜焼き</td>
+              </tr>
+              <tr>
+                <td class="item-description pr-5">
+                  stir-fried pork belly slices
+                  with ginger sauce
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!-- right row -->
+          <div class="col-lg-6 py-3 py-lg-0 pr-0 pl-0 pl-lg-5">
+            <table>
+              <!-- menu item -->
+              <tr>
+                <td class="item-name-and-price">BEEF KAMAMESHI</td>
+                <td class="item-name-and-price float-right">395</td>
+              </tr>
+              <tr>
+                <td class="item-name-japanese">牛釜めし</td>
+              </tr>
+              <tr>
+                <td class="item-description pr-5">
+                  kettle-cooked rice topped
+                  with beef and flavored in
+                  our hot special sauce
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <!-- middle row -->
+        <div class="row px-5 px-sm-5-5 py-0 py-lg-3">
+          <!-- left row -->
+          <div class="col-lg-6 py-3 py-lg-0 pl-0 pr-0 pr-lg-5">
+            <table>
+              <!-- menu item -->
+              <tr>
+                <td class="item-name-and-price">SALMON KAMAMESHI</td>
+                <td class="item-name-and-price float-right">550</td>
+              </tr>
+              <tr>
+                <td class="item-name-japanese">サーモン釜めし</td>
+              </tr>
+              <tr>
+                <td class="item-description pr-5">
+                  kettle-cooked rice flavored
+                  in our house special sauce,
+                  with clams and salmon
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!-- right row -->
+          <div class="col-lg-6 py-3 py-lg-0 pr-0 pl-0 pl-lg-5">
+            <table>
+              <!-- menu item -->
+              <tr>
+                <td class="item-name-and-price">MIX TEMPURA</td>
+                <td class="item-name-and-price float-right">395</td>
+              </tr>
+              <tr>
+                <td class="item-name-japanese">天ぷら</td>
+              </tr>
+              <tr>
+                <td class="item-description pr-5">
+                  lightly batterred assortment
+                  assortment of succulent
+                  seafod and vegetables
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <!-- middle row -->
+        <div class="row px-5 px-sm-5-5 py-0 pb-lg-4 pt-lg-3">
+          <!-- left row -->
+          <div class="col-lg-6 py-3 py-lg-0 pl-0 pr-0 pr-lg-5">
+            <table>
+              <!-- menu item -->
+              <tr>
+                <td class="item-name-and-price">TERIYAKI SALMON</td>
+                <td class="item-name-and-price float-right">595</td>
+              </tr>
+              <tr>
+                <td class="item-name-japanese">照り焼きサーモン</td>
+              </tr>
+              <tr>
+                <td class="item-description pr-5">
+                  stir-fried salmon and
+                  vegetables with teriyaki
+                  sauce
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!-- right row -->
+          <div class="col-lg-6 py-3 py-lg-0 pr-0 pl-0 pl-lg-5">
+            <table>
+              <!-- menu item -->
+              <tr>
+                <td class="item-name-and-price">SHIMA HOKKE SHIOYAKI</td>
+                <td class="item-name-and-price float-right">595</td>
+              </tr>
+              <tr>
+                <td class="item-name-japanese">シマホッケ塩焼き</td>
+              </tr>
+              <tr>
+                <td class="item-description pr-5">
+                  grilled semi-dried atka
+                  mackerel
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <!-- bottom row -->
+        <div class="row px-5 px-sm-5-5 pb-5-5">
+          <!-- left row -->
+          <div class="col-lg-6 py-3 py-lg-0 pl-0 pr-0 pr-lg-5">
+            <table>
+              <!-- menu item -->
+              <tr>
+                <td class="item-name-and-price ">YUKIHIRA UNA JYU</td>
+                <td class="item-name-and-price">775</td>
+              </tr>
+              <tr>
+                <td class="item-name-japanese">ゆきひらのうな重</td>
+              </tr>
+              <tr>
+                <td class="item-description pr-5">
+                  grilled eel over rice,
+                  yukihira soma's specialty
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jyu menu -->
+    <div id="jyu_menu" class="container-fluid px-0 px-sm-3 px-md-5 px-xl-6 px-xxl-6 py-5" style="display:none">
+      <div class="container-fluid p-0 menu-container">
+        <div class="container-fluid menu-header d-flex justify-content-center align-items-center" style="background-image: url(images/headerjyu.png)">
+          <h1>JYU</h1>
+        </div>
+        <!-- top row -->
+        <div class="row px-5 px-sm-5-5 pt-5-5">
+          <!-- left row -->
+          <div class="col-lg-6 py-3 py-lg-0 pl-0 pr-0 pr-lg-5">
+            <table>
+              <!-- menu item -->
+              <tr>
+                <td class="item-name-and-price">YAKINIKU JYU</td>
+                <td class="item-name-and-price float-right">325</td>
+              </tr>
+              <tr>
+                <td class="item-name-japanese">焼肉重</td>
+              </tr>
+              <tr>
+                <td class="item-description pr-5">
+                  tender slices of beef cooked in
+                  Japanese-style sauce and served
+                  over rice
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!-- right row -->
+          <div class="col-lg-6 py-3 py-lg-0 pr-0 pl-0 pl-lg-5">
+            <table>
+              <!-- menu item -->
+              <tr>
+                <td class="item-name-and-price">GYU</td>
+                <td class="item-name-and-price float-right">325</td>
+              </tr>
+              <tr>
+                <td class="item-name-japanese">牛</td>
+              </tr>
+              <tr>
+                <td class="item-description pr-5">
+                  tender slices of beef cooked in
+                  house special sweet sauce on top
+                  of rice
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <!-- middle row -->
+        <div class="row px-5 px-sm-5-5 py-0 pt-lg-4 pb-lg-3">
+          <!-- left row -->
+          <div class="col-lg-6 py-3 py-lg-0 pl-0 pr-0 pr-lg-5">
+            <table>
+              <!-- menu item -->
+              <tr>
+                <td class="item-name-and-price">SUKIYAKI</td>
+                <td class="item-name-and-price float-right">325</td>
+              </tr>
+              <tr>
+                <td class="item-name-japanese">すき焼き</td>
+              </tr>
+              <tr>
+                <td class="item-description pr-5">
+                  sweet and flavorful slices of beef
+                  mixed with tofu, vegetables and
+                  soft-boiled egg served on rice
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!-- right row -->
+          <div class="col-lg-6 py-3 py-lg-0 pr-0 pl-0 pl-lg-5">
+            <table>
+              <!-- menu item -->
+              <tr>
+                <td class="item-name-and-price">OKAYO</td>
+                <td class="item-name-and-price float-right">295</td>
+              </tr>
+              <tr>
+                <td class="item-name-japanese">親子</td>
+              </tr>
+              <tr>
+                <td class="item-description pr-5">
+                  chicken and egg simmered with
+                  special sauce and served over rice
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <!-- middle row -->
+        <div class="row px-5 px-sm-5-5 py-0 py-lg-3">
+          <!-- left row -->
+          <div class="col-lg-6 py-3 py-lg-0 pl-0 pr-0 pr-lg-5">
+            <table>
+              <!-- menu item -->
+              <tr>
+                <td class="item-name-and-price">CRISPY CHICKEN</td>
+                <td class="item-name-and-price float-right">295</td>
+              </tr>
+              <tr>
+                <td class="item-name-japanese">サクサクした鶏肉</td>
+              </tr>
+              <tr>
+                <td class="item-description pr-5">
+                  golden fried chicken cutlets
+                  glazed in savory japanese sauce
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!-- right row -->
+          <div class="col-lg-6 py-3 py-lg-0 pr-0 pl-0 pl-lg-5">
+            <table>
+              <!-- menu item -->
+              <tr>
+                <td class="item-name-and-price">CHICKEN KATSU TOJI</td>
+                <td class="item-name-and-price float-right">295</td>
+              </tr>
+              <tr>
+                <td class="item-name-japanese">チキンカツ東寺</td>
+              </tr>
+              <tr>
+                <td class="item-description pr-5">
+                  juicy fried chicken simmered in
+                  special sauce with eggs, placed
+                  over rice
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <!-- middle row -->
+        <div class="row px-5 px-sm-5-5 py-0 pb-lg-4 pt-lg-3">
+          <!-- left row -->
+          <div class="col-lg-6 py-3 py-lg-0 pl-0 pr-0 pr-lg-5">
+            <table>
+              <!-- menu item -->
+              <tr>
+                <td class="item-name-and-price">WAFU CHICKEN KATSU</td>
+                <td class="item-name-and-price float-right">295</td>
+              </tr>
+              <tr>
+                <td class="item-name-japanese">和風チキンかつ</td>
+              </tr>
+              <tr>
+                <td class="item-description pr-5">
+                  golden fried chicken with nori
+                  flakes on top of rice
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!-- right row -->
+          <div class="col-lg-6 py-3 py-lg-0 pr-0 pl-0 pl-lg-5">
+            <table>
+              <!-- menu item -->
+              <tr>
+                <td class="item-name-and-price">WAFU KATSU</td>
+                <td class="item-name-and-price float-right">295</td>
+              </tr>
+              <tr>
+                <td class="item-name-japanese">和風かつ</td>
+              </tr>
+              <tr>
+                <td class="item-description pr-5">
+                  golden fried pork loin with nori
+                  flakes on top of rice
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <!-- bottom row -->
+        <div class="row px-5 px-sm-5-5 pb-5-5">
+          <!-- left row -->
+          <div class="col-lg-6 py-3 py-lg-0 pl-0 pr-0 pr-lg-5">
+            <table>
+              <!-- menu item -->
+              <tr>
+                <td class="item-name-and-price">KATSU TOJI</td>
+                <td class="item-name-and-price float-right">295</td>
+              </tr>
+              <tr>
+                <td class="item-name-japanese">かつとじ</td>
+              </tr>
+              <tr>
+                <td class="item-description pr-5">
+                  deep-fried pork loin simmered in
+                  sauce and eggs, placed over rice
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- desserts menu -->
+    <div id="desserts_menu" class="container-fluid px-0 px-sm-3 px-md-5 px-xl-6 px-xxl-6 py-5" style="display:none">
+      <div class="container-fluid p-0 menu-container">
+        <div class="container-fluid menu-header d-flex justify-content-center align-items-center" style="background-image: url(images/headerdessert.png)">
+          <h1 style="font-size: 45px">DESSERTS/DRINKS</h1>
+        </div>
+        <!-- top row -->
+        <div class="row px-5 px-sm-5-5 pt-5-5">
+          <!-- left row -->
+          <div class="col-lg-6 py-3 py-lg-0 pl-0 pr-0 pr-lg-5">
+            <table>
+              <!-- menu item -->
+              <tr>
+                <td class="item-name-and-price">MATCHA ANMITSU</td>
+                <td class="item-name-and-price float-right">220</td>
+              </tr>
+              <tr>
+                <td class="item-name-japanese">抹茶あんみつ</td>
+              </tr>
+              <tr>
+                <td class="item-description pr-5">
+                  green tea ice cream with azuki
+                  beans and fruit cocktail, served
+                  with black sugar soup
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!-- right row -->
+          <div class="col-lg-6 py-3 py-lg-0 pr-0 pl-0 pl-lg-5">
+            <table>
+              <!-- menu item -->
+              <tr>
+                <td class="item-name-and-price">VANILLA ICE CREAM</td>
+                <td class="item-name-and-price float-right">95</td>
+              </tr>
+              <tr>
+                <td class="item-name-japanese">バニラアイス</td>
+              </tr>
+              <tr>
+                <td class="item-description pr-5">
+                  classic vanilla ice cream served
+                  with whipped cream and fruit
+                  cocktail
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <!-- middle row -->
+        <div class="row px-5 px-sm-5-5 py-0 py-lg-4">
+          <!-- left row -->
+          <div class="col-lg-6 py-3 py-lg-0 pl-0 pr-0 pr-lg-5">
+            <table>
+              <!-- menu item -->
+              <tr>
+                <td class="item-name-and-price">CHEESECAKE</td>
+                <td class="item-name-and-price float-right">195</td>
+              </tr>
+              <tr>
+                <td class="item-name-japanese">チーズケーキ</td>
+              </tr>
+              <tr>
+                <td class="item-description pr-5">
+                  smoothly layered cream cheese
+                  over crusted grahams
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!-- right row -->
+          <div class="col-lg-6 py-3 py-lg-0 pr-0 pl-0 pl-lg-5">
+            <table>
+              <!-- menu item -->
+              <tr>
+                <td class="item-name-and-price">STRAWBERRY CHEESECAKE
+                </td>
+                <td class="item-name-and-price float-right">250</td>
+              </tr>
+              <tr>
+                <td class="item-name-japanese">ストロベリーチーズケーキ</td>
+              </tr>
+              <tr>
+                <td class="item-description pr-5">
+                  smoothly layered cream cheese
+                  over crusted grahams topped with
+                  strawberry
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <!-- bottom row -->
+        <div class="row px-5 px-sm-5-5 pb-5-5">
+          <!-- left row -->
+          <div class="col-lg-6 py-3 py-lg-0 pl-0 pr-0 pr-lg-5">
+            <table>
+              <!-- menu item -->
+              <tr>
+                <td class="item-name-and-price">BLUEBERRY CHEESECAKE</td>
+                <td class="item-name-and-price float-right">250</td>
+              </tr>
+              <tr>
+                <td class="item-name-japanese">ブルーベリーチーズケーキ</td>
+              </tr>
+              <tr>
+                <td class="item-description pr-5">
+                  smoothly layered cream cheese
+                  over crusted grahams topped with
+                  blueberry
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <h2 class="d-flex justify-content-center px-5 px-sm-5-5">BEVERAGE</h2>
+
+        <!-- top row -->
+        <div class="row px-5 px-sm-5-5 pt-5-5">
+          <!-- left row -->
+          <div class="col-lg-6 py-3 py-lg-0 pl-0 pr-0 pr-lg-5">
+            <table>
+              <!-- menu item -->
+              <tr>
+                <td class="item-name-and-price">HOUSE BLEND ICED TEA</td>
+                <td class="item-name-and-price float-right">99</td>
+              </tr>
+              <tr>
+                <td class="item-name-japanese">ハウスブレンドアイスティー</td>
+              </tr>
+            </table>
+          </div>
+          <!-- right row -->
+          <div class="col-lg-6 py-3 py-lg-0 pr-0 pl-0 pl-lg-5">
+            <table>
+              <!-- menu item -->
+              <tr>
+                <td class="item-name-and-price">BOTTLED WATER</td>
+                <td class="item-name-and-price float-right">45</td>
+              </tr>
+              <tr>
+                <td class="item-name-japanese">ボトルウォーター</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <!-- middle row -->
+        <div class="row px-5 px-sm-5-5 py-0 py-lg-4">
+          <!-- left row -->
+          <div class="col-lg-6 py-3 py-lg-0 pl-0 pr-0 pr-lg-5">
+            <table>
+              <!-- menu item -->
+              <tr>
+                <td class="item-name-and-price">SODA (COKE/SPRITE)</td>
+                <td class="item-name-and-price float-right">95</td>
+              </tr>
+              <tr>
+                <td class="item-name-japanese">ソーダコークス/スプライト</td>
+              </tr>
+            </table>
+          </div>
+          <!-- right row -->
+          <div class="col-lg-6 py-3 py-lg-0 pr-0 pl-0 pl-lg-5">
+            <table>
+              <!-- menu item -->
+              <tr>
+                <td class="item-name-and-price">ICED COFFEE</td>
+                <td class="item-name-and-price float-right">120</td>
+              </tr>
+              <tr>
+                <td class="item-name-japanese">アイスコーヒー</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <!-- bottom row -->
+        <div class="row px-5 px-sm-5-5 pb-5-5">
+          <!-- left row -->
+          <div class="col-lg-6 py-3 py-lg-0 pl-0 pr-0 pr-lg-5">
+            <table>
+              <!-- menu item -->
+              <tr>
+                <td class="item-name-and-price">MILK TEA</td>
+                <td class="item-name-and-price float-right">110</td>
+              </tr>
+              <tr>
+                <td class="item-name-japanese">ミルクティー</td>
+              </tr>
+            </table>
+          </div>
+          <!-- right row -->
+          <div class="col-lg-6 py-3 py-lg-0 pr-0 pl-0 pl-lg-5">
+            <table>
+              <!-- menu item -->
+              <tr>
+                <td class="item-name-and-price">LEMONADE COOLER</td>
+                <td class="item-name-and-price float-right">120</td>
+              </tr>
+              <tr>
+                <td class="item-name-japanese">レモネード</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <h2 class="d-flex justify-content-center px-5 px-sm-5-5">ALCOHOL</h2>
+
+        <!-- top row -->
+        <div class="row px-5 px-sm-5-5 pt-5-5">
+          <!-- left row -->
+          <div class="col-lg-6 py-3 py-lg-0 pl-0 pr-0 pr-lg-5">
+            <table>
+              <!-- menu item -->
+              <tr>
+                <td class="item-name-and-price">SAN MIGUEL LIGHT</td>
+                <td class="item-name-and-price float-right">90
+                </td>
+              </tr>
+              <tr>
+                <td class="item-name-japanese">サンミゲルライト
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!-- right row -->
+          <div class="col-lg-6 py-3 py-lg-0 pr-0 pl-0 pl-lg-5">
+            <table>
+              <!-- menu item -->
+              <tr>
+                <td class="item-name-and-price">SAN MIGUEL PALE PILSEN</td>
+                <td class="item-name-and-price float-right">90</td>
+              </tr>
+              <tr>
+                <td class="item-name-japanese">サンミゲルペールピル</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <!-- bottom row -->
+        <div class="row px-5 px-sm-5-5 pt-0 pt-lg-4 pb-5-5">
+          <!-- left row -->
+          <div class="col-lg-6 py-3 py-lg-0 pl-0 pr-0 pr-lg-5">
+            <table>
+              <!-- menu item -->
+              <tr>
+                <td class="item-name-and-price">KIRIN BEER</td>
+                <td class="item-name-and-price float-right">150</td>
+              </tr>
+              <tr>
+                <td class="item-name-japanese">キリンビール</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <h2 class="d-flex justify-content-center px-5 px-sm-5-5">JAPANESE SAKE</h2>
+
+        <!-- top row -->
+        <div class="row px-5 px-sm-5-5 pt-5-5">
+          <!-- left row -->
+          <div class="col-lg-6 py-3 py-lg-0 pl-0 pr-0 pr-lg-5">
+            <table>
+              <!-- menu item -->
+              <tr>
+                <td class="item-name-and-price">ONE CUP OZEKI (200ML)</td>
+                <td class="item-name-and-price float-right">245</td>
+              </tr>
+              <tr>
+                <td class="item-name-japanese">ワンカップ 大関</td>
+              </tr>
+            </table>
+          </div>
+          <!-- right row -->
+          <div class="col-lg-6 py-3 py-lg-0 pr-0 pl-0 pl-lg-5">
+            <table>
+              <!-- menu item -->
+              <tr>
+                <td class="item-name-and-price">KARATAMBA (300ML)</td>
+                <td class="item-name-and-price float-right">490</td>
+              </tr>
+              <tr>
+                <td class="item-name-japanese">辛丹波</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <!-- bottom row -->
+        <div class="row px-5 px-sm-5-5 pt-0 pt-lg-4 pb-5-5">
+          <!-- left row -->
+          <div class="col-lg-6 py-3 py-lg-0 pl-0 pr-0 pr-lg-5">
+            <table>
+              <!-- menu item -->
+              <tr>
+                <td class="item-name-and-price">IICHIKO (720ML)</td>
+                <td class="item-name-and-price float-right">2100</td>
+              </tr>
+              <tr>
+                <td class="item-name-japanese">いいちこ</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- footer: hours of operations -->
+    <footer class="hours-of-operations d-flex align-items-center px-3 px-md-5 px-xl-6 px-xxl-6 scroll-snap">
+      <img src="images/footertext.png" alt="Hours of Operation" style="max-width: 100%;">
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

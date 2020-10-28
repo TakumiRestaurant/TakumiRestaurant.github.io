@@ -1,0 +1,28 @@
+header {
+    position: relative;
+    height: 90vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+    background: url('../images/ourstorybgwithtext.png') center center;
+    background-size: cover;
+}
+
+.about-container {
+    background-color: white;
+}
+
+h1 {
+    font-family: "Pathway Gothic One", sans-serif;
+    font-size: 50px;
+    line-height: 58px;
+    letter-spacing: 4px;
+}
+
+p {
+    font-family: "Bitter Regular", serif;
+    font-size: 20px;
+    line-height: 40px;
+    text-indent: 50px;
+}
+

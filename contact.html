@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/preload.js"></script>
+    <script src="js/contact.js"></script>
+    <title>Takumi</title>
+  </head>
+  <body>
+    <!-- header -->
+    <div class="px-3 px-md-5 px-xl-6 px-xxl-6 py-0 mb-0 nav-style-2">
+      <nav class="navbar navbar-expand-sm navbar-dark px-0 py-2">
+        <a href="index.html"><img src="images/logosmall.png" alt="Takumi Logo"></a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse pull-xs-right justify-content-end" id="navbarMenu">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a href="index.html" class="nav-link ml-md-4">HOME</a></li>
+            <li class="nav-item"><a href="menu.html" class="nav-link ml-md-4">MENU</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link ml-md-4">ABOUT</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link ml-md-4 nav-active">CONTACT US</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!-- form -->
+    <div class="container-fluid px-3 px-md-5 px-xl-6 px-xxl-6 py-5-5">
+      <div class="col-md-7 px-0 ">
+        <h1 class="mb-4">CONTACT US</h1>
+        <form class="pb-5-5">
+          <input id="name" type="text" class="form-box form-control px-3 py-3 mb-3" placeholder="Name" required>
+          <input id="email" type="email" class="form-box form-control px-3 py-3 mb-3" placeholder="Email" required>
+          <textarea id="msg" rows="10" class="form-box form-control px-3 py-3 mb-3" placeholder="Message" required></textarea>
+          <button class="float-right btn btn-red submit-button" type="button" id="submit_button">SUBMIT</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="submit-success" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">TAKUMI</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Message sent successfully. We will reply to your email ASAP!</p>
+            <p>Thank you for choosing Takumi!</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-red submit-button" style="width: 100px; height: 40px;" data-dismiss="modal">CLOSE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="submit-failed" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">TAKUMI</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Error!</p>
+            <p>Message can not be sent. Please fill up the form correctly!</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-red submit-button" style="width: 100px; height: 40px;" data-dismiss="modal">CLOSE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer: hours of operations -->
+    <footer class="hours-of-operations d-flex align-items-center px-3 px-md-5 px-xl-6 px-xxl-6 scroll-snap">
+      <img src="images/footertext.png" alt="Hours of Operation" style="max-width: 100%;">
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

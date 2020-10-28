@@ -1,0 +1,59 @@
+body {
+    background: white;
+}
+
+h1 {
+    font-family: "Pathway Gothic One", sans-serif;
+    font-size: 50px;
+    line-height: 58px;
+    letter-spacing: 4px;
+}
+
+h5 {
+    font-family: "Pathway Gothic One", sans-serif;
+    font-size: 35px;
+    letter-spacing: 4px;
+}
+
+.form-box {
+    width: 100%;
+    border: 1px solid #9D9D9D;
+    border-radius: 0;
+    font-family: "Bitter Regular", serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+textarea {
+    resize: none;
+}
+
+.submit-button {
+    border-radius: 0;
+    font-family: "Bitter SemiBold", serif;
+    font-size: 16px;
+    width: 200px;
+    height: 50px;
+}
+
+.btn-red {
+    color: #fff;
+    background-color: #E42023;
+    border-color: #E42023;
+}
+
+.btn-red:hover {
+    color: #E42023;
+    background-color: #fff;
+    border-color: #E42023;
+}
+
+.form-control:focus, .btn-red:focus, .btn-outline-danger.focus {
+    border-color: #E42023;
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
+}
+
+p {
+    font-family: "Bitter Regular", serif;
+    font-size: 16px;
+}

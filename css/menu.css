@@ -1,0 +1,77 @@
+.menu-navbar {
+    background-color: #EBE9E6;
+}
+
+.menu-navbar-modify {
+    float: none;
+    padding: 0 !important;
+}
+
+.menu-category {
+    color: black !important;
+    font-size: 20px;
+    font-family: "Bitter Medium", serif;
+    transition: color 0.5s;
+}
+
+.menu-category:not(.active):hover {
+    color: #E42023 !important;
+}
+
+.menu-active {
+    color: white !important;
+    background-color: #E42023;
+}
+
+.menu-container {
+    background-color: white;
+}
+
+.menu-header {
+    height: 238px;
+}
+
+.menu-container h1 {
+    font-family: "Bitter SemiBold", serif;
+    font-size: 60px;
+    line-height: 72px;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.menu-container h2 {
+    font-family: "Bitter SemiBold", serif;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 1px;
+    color: black;
+}
+
+.item-name-and-price {
+    font-family: "Bitter SemiBold", serif;
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: black;
+}
+
+.item-name-japanese {
+    font-family: "MPLUS Medium", sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    color: #9D9D9D;
+}
+
+.item-description {
+    font-family: "Bitter Regular", serif;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    color: #9D9D9D;
+    text-align: justify !important;
+}
+
+table {
+    width: 100%;
+}
